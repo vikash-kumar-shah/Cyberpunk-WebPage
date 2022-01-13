@@ -1,0 +1,443 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Oswald', sans-serif;
+    scroll-snap-type: y mandatory;
+}
+@font-face {
+    font-family: 'doctor_glitchregular';
+    src: url('doctor-glitch-webfont.woff2') format('woff2'),
+         url('doctor-glitch-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+div{
+    scroll-snap-align: start;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.nav{
+    position: absolute;
+}
+ul{
+    list-style-type: none;
+    margin-top: -350px;
+    
+}
+li{
+    float:left;
+    font-size: 20px;
+    margin-left: 50px;
+    color:white;
+    border:2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    font-family: 'doctor_glitchregular';
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+    width:100vw;
+    color:white;
+    background-image: url("https://wallpapercave.com/wp/wp5799725.jpg");
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+
+.cyber{
+    font-size:200px;
+    color:yellow;
+    transform: scale(100);
+    transition: transform 1s linear;
+    position: absolute;
+    font-family: 'doctor_glitchregular';
+}
+.divdate{
+    position: relative;
+    overflow: hidden;
+}
+.date{
+    display: flex;
+    font-size:160px;
+    margin-left: -300px;
+    margin-top: 440px;
+    transition: margin-left 2s,border-left 2s;
+    transition-delay: 2s;
+    height: 160px;
+    align-items: center;
+}
+/* i changed this haver */
+.main:hover>.divdate>.date{
+    margin-left: 0px;
+    border-left:3px solid yellow;
+}
+/* i changede this hiover */
+.main:hover>.cyber{
+    transform:scale(1);
+}
+/* making inner  */
+.inner{
+    height: 100vh;
+    width:100vw;
+    background-image: url("https://i.redd.it/x5gcneyiwyz21.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+.glass{
+    height:20vh;
+    width:80vw;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    border:2px solid white;
+    margin-top:100vh;
+    box-shadow: 2px 2px 2px transparent;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left:10%;
+    transition: margin-top 2s ease-in-out;
+
+}
+.inhead{
+    box-align: center;
+    text-align: center;
+
+}
+.inhead{
+    color:white;
+    text-decoration: underline white;
+}
+.parag{
+    color:white;
+    font-size:40px;
+    text-transform: capitalize;
+    transform: translateX(26%);
+}
+.inner:hover>.glass>p{
+    margin-left:0px;
+}
+.inner:hover>.glass{
+    margin-top:80vh;
+}
+.third{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/606/118/466/video-game-cyberpunk-2077-city-hd-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.tp{
+    position: absolute;
+    margin-top:-600px;
+    font-size:30px;
+}
+
+.flex1,.flex2,.flex3{
+    height:400px;
+    width:400px;
+    border:2px solid black;
+    background-color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.third:hover>div{
+    transform: scale(1.1);
+}
+.third:hover>.flex1,.third:hover>.flex2,.third:hover>.flex3{
+    background-position-y: 100px;
+}
+.flex1{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/f1293592412397.5e4ae9f0bcf70.jpg");
+    background-size: 450px 200px;
+    background-repeat: no-repeat;
+}
+
+.flex2{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/1678d292412397.5e4ae9f0bd53e.jpg");
+    background-size: 450px 200px;
+    background-repeat: no-repeat;
+}
+.flex3{
+    background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/01369c92412397.5e4ae9f0bbb66.jpg");
+    background-size: 450px 200px;
+    background-repeat: no-repeat;
+}
+.flex1:hover,.flex2:hover,.flex3:hover{
+    background-position-y: 100px;
+}
+
+
+#myvideo{
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+
+}
+
+
+
+
+
+
+/* fourth */
+
+.four{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    width:100vw;
+    background-color:black;
+    position: relative;
+    z-index: 4;
+}
+
+.login{
+    position: relative;
+    border:2px solid white;
+    height:600px;
+    width:500px;
+    border-radius:20px;
+    background-color:black;
+    margin-top: 14%;
+    color:white;
+
+}
+.loginh,.loginfp,.loginf,.loginp{
+    margin-bottom: 20px;
+    text-align: center;
+    color:white;
+}
+
+.loginname,.loginpass{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.loginh{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.loginp,.loginname{
+    margin-top:40px;
+    margin-bottom:60px;
+}
+.loginfp{
+    margin-top:20px;
+}
+.logo{
+    height:400px;
+    width:400px;
+    position: absolute;
+    margin-top: -36%;
+    z-index: -2;
+}
+.loginname,.loginpass{
+    height:80px;
+    margin-top:-50px;
+}
+/* critical part checked */
+input{
+    border:2px solid black;
+    background-color:transparent !important;
+    border:2px solid rgb(106, 139, 250);
+    border-radius: 20px;
+    width:40%;
+    height:50%;
+    color:yellow;
+    transition:width 0.5s;
+}
+
+input:focus{
+    background-color:transparent !important;
+    border-radius: 20px;
+    width:60%;
+    outline:none !important;
+    height:50%;
+    color:yellow;
+}
+.loginfpa{
+    color:white;
+    text-decoration: none;
+}
+.loginf{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    height:40px;  
+}
+.loginfpp{
+    border:2px solid rgb(22, 247, 134);
+    height:100%;
+    width:30%;
+    margin-left:34%;
+    border-radius: 20px;
+    transition:background-color 0.8s,color 0.8s,border 0.8s;
+}
+.loginfpp:hover{
+    background-color:rgb(22, 247, 134);
+    color:black;
+    border:2px solid black;
+}
+.login:before{
+    content: "Cyber";
+    font-family: 'doctor_glitchregular';
+    position:absolute;
+    font-size: 150px;
+    margin-left:-520px;
+    margin-top:200px;
+    color:yellow;
+    z-index:-1;
+}
+.login:after{
+    content: "Punk";
+    font-family: 'doctor_glitchregular';
+    position:absolute;
+    color:yellow;
+    font-size: 150px;
+    margin-left:500px;
+    margin-top:-256px;
+    z-index:-1;
+
+}
+.download{
+    color:yellow;
+    margin-left:640px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.five{
+    background-color: black;
+    height: 100vh;
+    width:100vw;
+    background-image:url("https://c4.wallpaperflare.com/wallpaper/565/305/193/cyberpunk-2077-cyberpunk-video-game-art-samurai-video-games-hd-wallpaper-preview.jpg");
+    background-position: 0px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* .btn {
+    background: linear-gradient(to bottom, #0066ff 0%, #ff0066 100%);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+  position: relative;
+  border: 3px solid rgb(238, 245, 238); 
+  border-radius: 2mm;
+  left:45%;
+  /* top:50%; */
+  /* bottom:50%; */
+  /* align-items: center;
+  margin-top: 470px;
+    
+  }
+  
+  Darker background on mouse-over */
+  /* .btn:hover{
+    color: black;
+    background-color: yellow;
+  } */
+
+  .dd{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      /* background-color: green; */
+      background: linear-gradient(to top left, #0066ff 0%, #ff0066 100%);
+      border-radius: 20px;
+      color:white;
+      text-align:center;
+      display:inline-block;
+      margin-left:49%;
+      margin-top:560px;
+      height:46px;
+      width:120px;
+      transition:background 2s;
+
+  }
+  .dd:hover{
+      color:rgb(2, 2, 1);
+      /* background-color: yellow; */
+      background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+      
+  }
+
+  .da{
+      text-decoration: none;
+      color:white;
+  }
+
+  .windows{
+      filter:invert(100%);
+  }
+  .mac{
+      filter:invert(100%);
+  }
+
+
+  .plays{
+      filter:invert(100%);
+      margin-right:20px;
+  }
+
+  .icon{
+      position: absolute;
+      display:flex;
+      justify-content:space-between;
+      gap: 500px;
+      align-items: center;
+      margin-top: 400px;
+      margin-left:160px;
+  }
+  .icon>.windows:hover,.icon>.mac:hover,.icon>.plays:hover{
+      transform:scale(1.2);
+  }
